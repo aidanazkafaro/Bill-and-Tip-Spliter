@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- FONT AWESOME LOGO -->
+  <script src="https://kit.fontawesome.com/02ecb83188.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <h1 class="title">SPLI<br>TTER</h1>
+  <div class="container">
+    <div class="inputContainer">
+      <p>Bill</p>
+
+      <form>
+        <i>$</i>
+        <input type="number" data-bill class="inputForm" min="0">
+      </form>
+  
+      <p>Select Tip %</p>
+      <div class="selectTip">
+        <button data-tip class="buttonTip">5%</button>
+        <button data-tip class="buttonTip">10%</button>
+        <button data-tip class="buttonTip">15%</button>
+        <button data-tip class="buttonTip">25%</button>
+        <button data-tip class="buttonTip">50%</button>
+        <button  class="buttonTip" style="background-color: hsl(189, 41%, 97%);">
+          <input class="tip-custom-input" data-tip-custom type="number" placeholder="Custom" min="0" max="100">
+        </button>        
+      </div>
+
+  
+      <!-- <p>Number of People <span>can't be zero</span></p> -->
+      <table style="width: 100%; border-spacing: 1px;">
+        <tr data-tr-people>
+          <td>
+            <p>Number of People</p>
+          </td>
+        </tr>
+      </table>
+      <form class="formPeople">
+        <i class="fas fa-user inputLogo"></i>
+        <input type="number" data-number-people class="inputForm" min="0">
+      </form>
+    </div>
+    
+
+    <div class="displayContainer">
+      <table>
+        <tr>
+          <td>
+            <h4>Tip Amount</h4>
+            <p>/ Person</p>            
+          </td>
+          <td colspan="2">
+            <div data-tip-amount class="tipAmount">$0.00</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h4>Total</h4>
+            <p>/ Person</p>            
+          </td>
+          <td>
+            <div data-total class="total">$0.00</div>
+          </td>
+        </tr>
+        
+      </table>
+      <button class="buttonCalculate" type="button" data-calculate>CALCULATE</button>
+      <button class="buttonReset" type="button" data-reset>RESET</button>
+      
+
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aidan Azkafaro Deson</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
