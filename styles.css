@@ -1,0 +1,254 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+p {
+    margin: 3px 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+  
+
+.title {
+    width: 100px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:hsl(183, 100%, 15%) ;
+    margin: 90px auto 0;
+    letter-spacing: 10px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    min-width: 800px;
+    max-width: 800px;
+    height: auto;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 20px;
+    margin: 50px auto 100px;
+    padding: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+@media (max-width: 1000px){
+
+    .container{
+        min-width: 375px;
+        max-width: 375px;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.inputContainer {
+    width: 350px;   
+}
+
+.inputContainer > p {
+    font-size: 0.8rem;
+    color:  hsl(183, 100%, 15%);
+}
+form {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
+    background-color: hsl(189, 41%, 97%);
+    width: 100%;
+    height: 55px;
+    padding: 8px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    border: 2px solid hsl(189, 41%, 97%);
+}
+
+form:active, form:hover, form:focus{
+    border: 2px solid hsl(171, 65%, 68%);
+}
+form .formPeople {
+    margin-top: -40px;
+}
+
+form > p {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.2) ;
+    font-size: 24px;
+}
+
+i {
+    position: absolute;
+    color: rgba(0, 0, 0, 0.2) ;
+    font-size: 24px;
+}
+
+.inputForm {
+    cursor: pointer;
+
+    float: right;
+    background-color: hsl(189, 41%, 97%);
+    border-width:0px;
+    border:none;
+    outline:none;
+    caret-color: hsl(183, 100%, 15%);
+    text-align: right;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 24px;
+    /* margin-right: 10px; */
+    color: hsl(183, 100%, 15%);
+}
+
+.warningZero{
+    border: 3px solid rgb(231, 119, 119);
+}
+.selectTip {
+    justify-content: left; /*di tengah (horizontally)*/
+    align-content: center; /*di tengah (vertically)*/
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+.buttonTip {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    outline: none;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border-radius: 5px;
+    width: 30%;
+    margin: 5px;
+    border: 2px solid hsl(183, 100%, 15%);
+}
+
+.buttonTip:hover {
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(171, 65%, 68%);
+    border: 2px solid hsl(171, 65%, 68%);
+}
+
+.active {
+    background-color: hsl(171, 65%, 68%);
+    border: 2px solid hsl(171, 65%, 68%);
+
+}
+
+.tip-custom-input {
+    cursor: pointer;
+    background-color: hsl(189, 41%, 97%);
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    border:none;
+    outline:none;
+    font-size: 22px;
+    margin-right: 0px;
+    text-align: center;
+    padding: 0;
+}
+
+form > .inputLogo {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.2) ;
+    margin-top: 7px;
+    margin-left: 1px;
+    padding: 0;
+}
+
+.displayContainer {
+    width: 350px;
+    padding: 30px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 20px;
+}
+
+table {
+    border-spacing: 0 25px;
+}
+
+h4 {
+    margin: 0;
+}
+
+.displayContainer h4 {
+    color: hsl(189, 41%, 97%) ;
+    font-size: 0.8rem;
+}
+
+.displayContainer p {
+    color: hsl(184, 14%, 56%);
+    font-size: 0.8rem;
+}
+
+.displayContainer .buttonCalculate {
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin: 10px auto 5px;
+    font-weight: 700;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    margin-top: 35px;
+}
+
+.displayContainer .buttonReset {
+    background-color: hsl(172, 59%, 30%);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin: 10px auto 5px;
+    font-weight: 700;
+    font-size: 15px;
+    outline: none;
+    border: none;
+}
+.displayContainer .buttonCalculate:active{
+    background-color: hsl(171, 65%, 68%);
+}
+
+.displayContainer .buttonReset:active{
+    background-color: hsl(172, 30%, 35%);
+}
+
+.tipAmount {
+    width: 200px;
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
+
+.total {
+    width: 200px;
+    text-align: right;
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
