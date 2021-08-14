@@ -14,7 +14,6 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -47,7 +46,7 @@ Users should be able to:
 ### What I learned
 
 HTML:
-  The HTML tags used in this project is quite simple. I use the <form> tag that has the <input> tag to get bill and     number of people input from the user. On the Select Tip section, I use buttons to make the preset tip options and     one button that has <input> tag as a child for the custom tip option. I learned about some of the attributes of       <input> tag such as the "type" attribute that determine the characters user can input, in this case the type is       "number" so the user can only input numbers to the <input> element. Another attribute I learned is the placeholder.   The placeholder attribute consists of a string that the user can see when the user hasn't clicked the <input>         element. I also set the min and max attribute to 0 and 100 so that the user can only input numbers between 0-100.
+  The HTML tags used in this project is quite simple. I use the form tag that has the input tag to get bill and number of people input from the user. On the Select Tip section, I use buttons to make the preset tip options and one button that has input tag as a child for the custom tip option. I learned about some of the attributes of input tag such as the "type" attribute that determine the characters user can input, in this case the type is "number" so the user can only input numbers to the <input> element. Another attribute I learned is the placeholder. The placeholder attribute consists of a string that the user can see when the user hasn't clicked the input element. I also set the min and max attribute to 0 and 100 so that the user can only input numbers between 0-100.
   
 ```html
   <input class="tip-custom-input" data-tip-custom type="number" placeholder="Custom" min="0" max="100">
